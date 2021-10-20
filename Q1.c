@@ -1,8 +1,3 @@
-// ARTHUR MEDEIROS, BRUNO POHREN
-
-// Usar "-lpthread"
-// gcc pthreads.c -o pthreads -lpthread && ./pthreads
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
