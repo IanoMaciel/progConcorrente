@@ -3,7 +3,7 @@
 
 int l = 5, c = 4;
 
-int start_routine((int) linha) {
+int start_routine(int linha []) {
 	int resultado = 0;
 	for (int j=0; j<c; j++){
 		resultado += linha[j];
@@ -30,7 +30,7 @@ int main() {
 	}
 	
 	for (int i=0; i<l; i++){
-		int soma = pthread_create (&threads[i], NULL, start_routine, (void *) matriz[i]);
+		int soma = pthread_create (&threads[i], NULL, start_routine (l), (void *) matriz[i]);
 		printf("Soma da linha: %d\n", soma);
 	}
 	
