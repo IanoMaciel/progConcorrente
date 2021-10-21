@@ -29,10 +29,12 @@ int main() {
 		}
 	}
 	
+
 	for (int i=0; i<l; i++){
 		int soma = pthread_create (&threads[i], NULL, start_routine (l), (void *) matriz[i]);
 		printf("Soma da linha: %d\n", soma);
 	}
-	
+
+		
 return 0;
 }
