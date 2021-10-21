@@ -1,3 +1,7 @@
+/*
+	compilar/executar: gcc Q1.c -o Q1 -lpthread && ./Q1
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
